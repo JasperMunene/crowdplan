@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
-import { 
-    SignInButton,
-    SignedIn,
-    SignedOut,
-    UserButton 
-} from '@clerk/nextjs';
+// import { 
+//     SignInButton,
+//     SignedIn,
+//     SignedOut,
+//     UserButton 
+// } from '@clerk/nextjs';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ export default function Navbar() {
 
         {/* Desktop Buttons - Conditionally Rendered */}
         <div className="hidden md:flex items-center space-x-4">
-          <SignedOut>
+          {/* <SignedOut>
             <SignInButton mode="modal">
               <Button variant="outline">Login</Button>
             </SignInButton>
@@ -40,7 +40,7 @@ export default function Navbar() {
           </SignedOut>
           <SignedIn>
             <UserButton />
-          </SignedIn>
+          </SignedIn> */}
         </div>
 
         {/* Hamburger Icon */}
@@ -58,7 +58,7 @@ export default function Navbar() {
             <Link href="/" className="text-gray-700 hover:text-red-600">Home</Link>
             <Link href="/events" className="text-gray-700 hover:text-red-600">Events</Link>
             <Link href="/event-creation" className="text-gray-700 hover:text-red-600">Create Event</Link>
-            <SignedOut>
+            {/* <SignedOut>
               <SignInButton mode="modal">
                 <Button variant="outline" className="w-full">Login</Button>
               </SignInButton>
@@ -68,7 +68,7 @@ export default function Navbar() {
             </SignedOut>
             <SignedIn>
               <UserButton className="w-full" />
-            </SignedIn>
+            </SignedIn> */}
           </div>
         </div>
       )}
