@@ -1,16 +1,10 @@
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
-} from '@clerk/nextjs'
+// import { ClerkProvider } from '@clerk/nextjs'
 import { Afacad } from 'next/font/google'
 import { neobrutalism } from '@clerk/themes'
 import "./globals.css";
 
 const afacad = Afacad({
-  weight: '400',
+  weight: '500',
   subsets: ['latin'],
 })
 
@@ -22,11 +16,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider
-      appearance={{
-        baseTheme: neobrutalism
-      }}
-    >
+    // <ClerkProvider
+    //   appearance={{
+    //     baseTheme: neobrutalism
+    //   }}
+    // >
       <html lang="en">
         <body
           className={`${afacad.className} antialiased`}
@@ -34,6 +28,6 @@ export default function RootLayout({ children }) {
           {children}
         </body>
       </html>
-    </ClerkProvider>
+    // </ClerkProvider>
   );
 }
