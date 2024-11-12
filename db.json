@@ -1,0 +1,169 @@
+{
+    "events": [
+      {
+        "id": 1,
+        "title": "Tech Conference 2024",
+        "image": "https://example.com/images/tech_conference.jpg",
+        "time": "10:00 AM",
+        "date": "2024-02-15",
+        "location": "San Francisco, CA",
+        "description": "A conference bringing together tech enthusiasts and industry leaders to discuss the future of technology.",
+        "category": "Technology",
+        "host": "Tech Innovators Inc."
+      },
+      {
+        "id": 2,
+        "title": "Art & Design Workshop",
+        "image": "https://example.com/images/art_workshop.jpg",
+        "time": "1:00 PM",
+        "date": "2024-03-20",
+        "location": "New York, NY",
+        "description": "An interactive workshop where attendees can explore various art and design techniques.",
+        "category": "Art",
+        "host": "Creative Minds"
+      },
+      {
+        "id": 3,
+        "title": "Startup Pitch Night",
+        "image": "https://example.com/images/pitch_night.jpg",
+        "time": "6:00 PM",
+        "date": "2024-04-05",
+        "location": "Austin, TX",
+        "description": "Aspiring entrepreneurs present their startup ideas to a panel of investors and mentors.",
+        "category": "Business",
+        "host": "Startup Hub"
+      },
+      {
+        "id": 4,
+        "title": "Music Festival 2024",
+        "image": "https://example.com/images/music_festival.jpg",
+        "time": "4:00 PM",
+        "date": "2024-05-10",
+        "location": "Los Angeles, CA",
+        "description": "Join us for a weekend of live music performances from artists across various genres.",
+        "category": "Music",
+        "host": "LiveNation"
+      },
+      {
+        "id": 5,
+        "title": "Health and Wellness Fair",
+        "image": "https://example.com/images/wellness_fair.jpg",
+        "time": "9:00 AM",
+        "date": "2024-06-01",
+        "location": "Miami, FL",
+        "description": "A fair dedicated to promoting health and wellness with workshops, yoga sessions, and guest speakers.",
+        "category": "Health",
+        "host": "Wellness Community"
+      },
+      {
+        "id": 6,
+        "title": "Culinary Arts Expo",
+        "image": "https://example.com/images/culinary_expo.jpg",
+        "time": "11:00 AM",
+        "date": "2024-07-15",
+        "location": "Chicago, IL",
+        "description": "Experience a showcase of culinary skills with top chefs from around the country.",
+        "category": "Food",
+        "host": "Gourmet Experiences"
+      },
+      {
+        "id": 7,
+        "title": "Environmental Sustainability Summit",
+        "image": "https://example.com/images/environmental_summit.jpg",
+        "time": "8:00 AM",
+        "date": "2024-08-10",
+        "location": "Seattle, WA",
+        "description": "A summit focused on discussing sustainable solutions for environmental challenges.",
+        "category": "Environment",
+        "host": "Green Earth Organization"
+      },
+      {
+        "id": 8,
+        "title": "Fitness Bootcamp",
+        "image": "https://example.com/images/fitness_bootcamp.jpg",
+        "time": "7:00 AM",
+        "date": "2024-09-05",
+        "location": "Denver, CO",
+        "description": "A high-intensity fitness bootcamp designed for all levels, led by professional trainers.",
+        "category": "Fitness",
+        "host": "FitPro Trainers"
+      },
+      {
+        "id": 9,
+        "title": "Book Club Meetup",
+        "image": "https://example.com/images/book_club.jpg",
+        "time": "5:00 PM",
+        "date": "2024-10-12",
+        "location": "Boston, MA",
+        "description": "Join fellow book lovers to discuss this month's selected book and related themes.",
+        "category": "Literature",
+        "host": "Readers Society"
+      },
+      {
+        "id": 10,
+        "title": "Photography Masterclass",
+        "image": "https://example.com/images/photography_masterclass.jpg",
+        "time": "2:00 PM",
+        "date": "2024-11-25",
+        "location": "Portland, OR",
+        "description": "A hands-on photography masterclass taught by a renowned photographer.",
+        "category": "Photography",
+        "host": "Visual Arts Collective"
+      },
+      {
+        "id": 11,
+        "title": "Charity Marathon",
+        "image": "https://example.com/images/charity_marathon.jpg",
+        "time": "6:00 AM",
+        "date": "2024-12-05",
+        "location": "Los Angeles, CA",
+        "description": "A marathon event where all proceeds go to local charities. Participate or sponsor!",
+        "category": "Charity",
+        "host": "Community Supporters"
+      },
+      {
+        "id": 12,
+        "title": "Robotics Workshop",
+        "image": "https://example.com/images/robotics_workshop.jpg",
+        "time": "3:00 PM",
+        "date": "2024-12-12",
+        "location": "Silicon Valley, CA",
+        "description": "Learn the basics of robotics and get hands-on experience building a simple robot.",
+        "category": "Technology",
+        "host": "Robotics Academy"
+      },
+      {
+        "id": 13,
+        "title": "Classical Music Evening",
+        "image": "https://example.com/images/classical_music_evening.jpg",
+        "time": "7:30 PM",
+        "date": "2024-12-20",
+        "location": "New York, NY",
+        "description": "An evening dedicated to classical music lovers featuring a live orchestra performance.",
+        "category": "Music",
+        "host": "City Symphony"
+      },
+      {
+        "id": 14,
+        "title": "Winter Wonderland Craft Fair",
+        "image": "https://example.com/images/craft_fair.jpg",
+        "time": "10:00 AM",
+        "date": "2024-12-22",
+        "location": "Boston, MA",
+        "description": "Shop handmade crafts, gifts, and decor at this holiday market.",
+        "category": "Arts & Crafts",
+        "host": "Handmade Community"
+      },
+      {
+        "id": 15,
+        "title": "Coding Bootcamp for Beginners",
+        "image": "https://example.com/images/coding_bootcamp.jpg",
+        "time": "9:00 AM",
+        "date": "2025-01-10",
+        "location": "Remote",
+        "description": "A week-long bootcamp for absolute beginners to learn coding basics.",
+        "category": "Education",
+        "host": "Learn to Code Academy"
+      }
+    ]
+  }
