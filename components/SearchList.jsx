@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin } from "lucide-react";
-import { format } from "date-fns";
+
 
 export default function SearchList({ events }) {
   return (
