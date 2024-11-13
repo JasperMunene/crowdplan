@@ -29,7 +29,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
+          <h3 className="text-lg font-semibold mb-4 text-gray-800">Connect With Us</h3>
           <div className="flex space-x-4">
             <Button variant="link" size="icon">
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
