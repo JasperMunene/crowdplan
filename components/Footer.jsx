@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -15,8 +16,12 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4 text-gray-800">Quick Links</h3>
           <ul className="space-y-2 text-muted-foreground">
-            <li>Browse Events</li>
-            <li>Create Event</li>
+            <li>
+              <Link href='/events'>Browse Events</Link>
+            </li>
+            <li>
+              <Link href='/event-creation'>Create Event</Link>
+            </li>
           </ul>
         </div>
         <div>
