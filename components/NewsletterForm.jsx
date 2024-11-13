@@ -3,17 +3,33 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { toast } from "sonner"
-
+import { toast } from "sonner";
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    toast("Successfully subscribed!", {description: "You'll now receive updates about new events.",}
-    );
-    setEmail("");
+    try {
+      const response = await fetch("http://localhost:3000/users", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+      if (response.ok) {
+        toast("Successfully subscribed!", {
+          description: "You'll now receive updates about new events.",
+        });
+        setEmail("");
+      } else {
+        toast("Subscription failed", { description: "Please try again later." });
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      toast("An error occurred", { description: "Please try again later." });
+    }
   };
 
   return (
