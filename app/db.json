@@ -3,7 +3,7 @@
       {
         "id": 1,
         "title": "Tech Conference 2024",
-        "image": "https://example.com/images/tech_conference.jpg",
+        "image": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGVjaCUyMENvbmZlcmVuY2UlMjAyMDI0fGVufDB8fDB8fHww",
         "time": "10:00 AM",
         "date": "2024-02-15",
         "location": "San Francisco, CA",
@@ -14,7 +14,7 @@
       {
         "id": 2,
         "title": "Art & Design Workshop",
-        "image": "https://example.com/images/art_workshop.jpg",
+        "image": "https://images.unsplash.com/photo-1459908676235-d5f02a50184b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "time": "1:00 PM",
         "date": "2024-03-20",
         "location": "New York, NY",
@@ -25,7 +25,7 @@
       {
         "id": 3,
         "title": "Startup Pitch Night",
-        "image": "https://example.com/images/pitch_night.jpg",
+        "image": "https://plus.unsplash.com/premium_photo-1675791190627-c3ec9ae8bc3d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "time": "6:00 PM",
         "date": "2024-04-05",
         "location": "Austin, TX",
@@ -36,7 +36,7 @@
       {
         "id": 4,
         "title": "Music Festival 2024",
-        "image": "https://example.com/images/music_festival.jpg",
+        "image": "https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "time": "4:00 PM",
         "date": "2024-05-10",
         "location": "Los Angeles, CA",
@@ -47,7 +47,7 @@
       {
         "id": 5,
         "title": "Health and Wellness Fair",
-        "image": "https://example.com/images/wellness_fair.jpg",
+        "image": "https://plus.unsplash.com/premium_photo-1663051227906-41181a2bb6e5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "time": "9:00 AM",
         "date": "2024-06-01",
         "location": "Miami, FL",
@@ -58,7 +58,7 @@
       {
         "id": 6,
         "title": "Culinary Arts Expo",
-        "image": "https://example.com/images/culinary_expo.jpg",
+        "image": "https://plus.unsplash.com/premium_photo-1686360865541-ba8740d3c323?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "time": "11:00 AM",
         "date": "2024-07-15",
         "location": "Chicago, IL",
@@ -69,7 +69,7 @@
       {
         "id": 7,
         "title": "Environmental Sustainability Summit",
-        "image": "https://example.com/images/environmental_summit.jpg",
+        "image": "https://images.unsplash.com/photo-1598335624134-5bceb5de202d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "time": "8:00 AM",
         "date": "2024-08-10",
         "location": "Seattle, WA",
@@ -80,7 +80,7 @@
       {
         "id": 8,
         "title": "Fitness Bootcamp",
-        "image": "https://example.com/images/fitness_bootcamp.jpg",
+        "image": "https://images.unsplash.com/photo-1549995546-87cb41aa98a4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "time": "7:00 AM",
         "date": "2024-09-05",
         "location": "Denver, CO",
@@ -91,7 +91,7 @@
       {
         "id": 9,
         "title": "Book Club Meetup",
-        "image": "https://example.com/images/book_club.jpg",
+        "image": "https://plus.unsplash.com/premium_photo-1706061121381-d7a7a5a06998?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "time": "5:00 PM",
         "date": "2024-10-12",
         "location": "Boston, MA",
@@ -102,7 +102,7 @@
       {
         "id": 10,
         "title": "Photography Masterclass",
-        "image": "https://example.com/images/photography_masterclass.jpg",
+        "image": "https://images.unsplash.com/photo-1542312940-2b6aaa1b28eb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "time": "2:00 PM",
         "date": "2024-11-25",
         "location": "Portland, OR",
@@ -113,7 +113,7 @@
       {
         "id": 11,
         "title": "Charity Marathon",
-        "image": "https://example.com/images/charity_marathon.jpg",
+        "image": "https://plus.unsplash.com/premium_photo-1664304830629-bdac1397d53c?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "time": "6:00 AM",
         "date": "2024-12-05",
         "location": "Los Angeles, CA",
@@ -124,7 +124,7 @@
       {
         "id": 12,
         "title": "Robotics Workshop",
-        "image": "https://example.com/images/robotics_workshop.jpg",
+        "image": "https://images.unsplash.com/photo-1581092334247-44dd684e3c82?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "time": "3:00 PM",
         "date": "2024-12-12",
         "location": "Silicon Valley, CA",
@@ -135,7 +135,7 @@
       {
         "id": 13,
         "title": "Classical Music Evening",
-        "image": "https://example.com/images/classical_music_evening.jpg",
+        "image": "https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "time": "7:30 PM",
         "date": "2024-12-20",
         "location": "New York, NY",
@@ -146,7 +146,7 @@
       {
         "id": 14,
         "title": "Winter Wonderland Craft Fair",
-        "image": "https://example.com/images/craft_fair.jpg",
+        "image": "https://plus.unsplash.com/premium_photo-1679991898461-bd46c8fe00c0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "time": "10:00 AM",
         "date": "2024-12-22",
         "location": "Boston, MA",
@@ -157,7 +157,7 @@
       {
         "id": 15,
         "title": "Coding Bootcamp for Beginners",
-        "image": "https://example.com/images/coding_bootcamp.jpg",
+        "image": "https://images.unsplash.com/photo-1607706189992-eae578626c86?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "time": "9:00 AM",
         "date": "2025-01-10",
         "location": "Remote",
