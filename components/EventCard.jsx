@@ -24,7 +24,7 @@ export default function EventCard({
     return (
         <Card className="overflow-hidden hover:shadow-lg transition-shadow">
             <div className="relative h-48 w-full">
-                <Image
+                <img
                     src={image}
                     alt={title}
                     fill
