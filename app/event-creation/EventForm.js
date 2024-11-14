@@ -9,6 +9,7 @@ export default function EventForm() {
   const [time, setTime] = useState("");
   const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
+  const [imageUrl, setImageUrl] = useState(""); // State for image URL
   const [successMessage, setSuccessMessage] = useState("");
   const [events, setEvents] = useState([]); // State to store fetched events
   const [errorMessage, setErrorMessage] = useState("");
@@ -17,7 +18,7 @@ export default function EventForm() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch("http://localhost:3001/events");
+        const response = await fetch("http://localhost:3000/events");
         if (!response.ok) {
           throw new Error("Failed to fetch events");
         }
@@ -33,7 +34,7 @@ export default function EventForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!title || !category || !date || !time || !location || !description) {
+    if (!title || !category || !date || !time || !location || !description || !imageUrl) {
       alert("Please fill in all fields before submitting.");
       return;
     }
@@ -45,10 +46,11 @@ export default function EventForm() {
       time,
       location,
       description,
+      image: imageUrl, // Include image URL in event data
     };
 
     try {
-      const response = await fetch("http://localhost:3001/events", {
+      const response = await fetch("http://localhost:3000/events", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -69,6 +71,7 @@ export default function EventForm() {
       setTime("");
       setLocation("");
       setDescription("");
+      setImageUrl(""); // Clear image URL field
     } catch (error) {
       setErrorMessage(error.message);
     }
@@ -147,26 +150,36 @@ export default function EventForm() {
           ></textarea>
         </div>
 
+        <div className={styles.label}>
+          Image URL
+          <input
+            type="url"
+            value={imageUrl}
+            onChange={(e) => setImageUrl(e.target.value)}
+            placeholder="Enter an image URL for the event"
+            className={styles.input}
+          />
+        </div>
+
         <button type="submit" className={styles.button}>
           Create Event
         </button>
       </form>
 
       <div className={styles.eventList}>
-        <h2 className={styles.listTitle}>Existing Events</h2>
+        <h2 className={styles.listTitle}>Past Events</h2>
         {events.length > 0 ? (
           <ul>
             {events.map((event) => (
               <li key={event.id} className={styles.eventItem}>
                 <h3>{event.title}</h3>
-
-                {/* Use img tag to display event image from an external URL */}
-                <img
-                  src={event.image}  // External URL for the image
-                  alt={event.title}  // Use event title for alt text
-                  className={styles.eventImage}  // Your custom styling class
-                />
-
+                {event.image && (
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                    className={styles.eventImage}
+                  />
+                )}
                 <p>Category: {event.category}</p>
                 <p>Date: {event.date}</p>
                 <p>Time: {event.time}</p>
