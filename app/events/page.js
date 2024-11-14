@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '@/components/Navbar'
 import EventCard from '@/components/EventCard'
-
+import Navbar from '@/components/Navbar';
 
 const Events = () => {
   const [events, setEvents] = useState(null)
