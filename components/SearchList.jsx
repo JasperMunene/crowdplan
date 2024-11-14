@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin } from "lucide-react";
+import Link from 'next/link';
 
 
 export default function SearchList({ events }) {
@@ -40,7 +41,7 @@ export default function SearchList({ events }) {
                   <TableCell>
                     <div className="flex items-center gap-3">
                       <div>
-                        <div className="font-medium">{event.title}</div>
+                        <div className="font-medium hover:font-semibold"><Link href={`/events/${event.id}`}>{event.title}</Link></div>
                       </div>
                     </div>
                   </TableCell>

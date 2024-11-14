@@ -22,6 +22,8 @@ const EventDetails = () => {
   const { id } = useParams();
   const router = useRouter();
   const [event, setEvent] = useState(null);
+  const [status, setStatus] = useState('Register Now')
+  const [buttonDisabled, setButtonDisabled] = useState(false);
 
   useEffect(() => {
     fetch(`http://localhost:3000/events/${id}`)
@@ -40,6 +42,8 @@ const EventDetails = () => {
     toast("Successfully Registered!", {
       description: "Check your email for details",
     });
+    setStatus("Registered!")
+    setButtonDisabled(true);
   }
 
   return (
@@ -117,8 +121,8 @@ const EventDetails = () => {
               </CardContent>
             </Card>
 
-            <Button onClick={handleClick} className="w-full" size="lg">
-              Register Now
+            <Button onClick={handleClick} disabled={buttonDisabled} className="w-full" size="lg">
+              {status}
             </Button>
           </div>
         </div>
