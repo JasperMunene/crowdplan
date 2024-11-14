@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import styles from "./EventForm.module.css";
-import EventCard from "@/components/EventCard";
 
 export default function EventForm() {
   const [title, setTitle] = useState("");
@@ -10,12 +9,11 @@ export default function EventForm() {
   const [time, setTime] = useState("");
   const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
-  const [imageUrl, setImageUrl] = useState(""); // State for image URL
+  const [imageUrl, setImageUrl] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
-  const [events, setEvents] = useState([]); // State to store fetched events
+  const [events, setEvents] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
 
-  // Fetch events from db.json
   useEffect(() => {
     const fetchEvents = async () => {
       try {
@@ -25,7 +23,7 @@ export default function EventForm() {
         }
         const data = await response.json();
         setEvents(data);
-      } catch (error) { 
+      } catch (error) {
         setErrorMessage(error.message);
       }
     };
@@ -47,7 +45,7 @@ export default function EventForm() {
       time,
       location,
       description,
-      image: imageUrl, // Include image URL in event data
+      image: imageUrl,
     };
 
     try {
@@ -72,7 +70,7 @@ export default function EventForm() {
       setTime("");
       setLocation("");
       setDescription("");
-      setImageUrl(""); // Clear image URL field
+      setImageUrl("");
     } catch (error) {
       setErrorMessage(error.message);
     }
@@ -168,22 +166,28 @@ export default function EventForm() {
       </form>
 
       <div className={styles.eventList}>
-        <h2 className={styles.listTitle}>Other Events</h2>
+        <h2 className={styles.listTitle}>Existing Events</h2>
         {events.length > 0 ? (
-          <div className="flex flex-col gap-5">
+          <ul>
             {events.map((event) => (
-              <EventCard
-              key={event.id}
-              title={event.title}
-              date={event.date}
-              location={event.location}
-              image={event.image}
-              price={event.price}
-              category={event.category}
-              id={event.id}
-            />
+              <li key={event.id} className={styles.eventItem}>
+                <h3>{event.title}</h3>
+                {event.image && (
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className={styles.eventImage}
+                  />
+                )}
+                <p>Category: {event.category}</p>
+                <p>Date: {event.date}</p>
+                <p>Time: {event.time}</p>
+                <p>Location: {event.location}</p>
+                <p>Description: {event.description}</p>
+              </li>
             ))}
-          </div>
+          </ul>
         ) : (
           <p>No events available.</p>
         )}
@@ -191,3 +195,4 @@ export default function EventForm() {
     </div>
   );
 }
+
