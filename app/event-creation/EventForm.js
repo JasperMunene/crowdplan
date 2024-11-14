@@ -9,12 +9,11 @@ export default function EventForm() {
   const [time, setTime] = useState("");
   const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
-  const [imageUrl, setImageUrl] = useState(""); // State for image URL
+  const [imageUrl, setImageUrl] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
-  const [events, setEvents] = useState([]); // State to store fetched events
+  const [events, setEvents] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
 
-  // Fetch events from db.json
   useEffect(() => {
     const fetchEvents = async () => {
       try {
@@ -46,7 +45,7 @@ export default function EventForm() {
       time,
       location,
       description,
-      image: imageUrl, // Include image URL in event data
+      image: imageUrl,
     };
 
     try {
@@ -71,7 +70,7 @@ export default function EventForm() {
       setTime("");
       setLocation("");
       setDescription("");
-      setImageUrl(""); // Clear image URL field
+      setImageUrl("");
     } catch (error) {
       setErrorMessage(error.message);
     }
@@ -167,7 +166,7 @@ export default function EventForm() {
       </form>
 
       <div className={styles.eventList}>
-        <h2 className={styles.listTitle}>Past Events</h2>
+        <h2 className={styles.listTitle}>Existing Events</h2>
         {events.length > 0 ? (
           <ul>
             {events.map((event) => (
@@ -177,6 +176,7 @@ export default function EventForm() {
                   <img
                     src={event.image}
                     alt={event.title}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className={styles.eventImage}
                   />
                 )}
