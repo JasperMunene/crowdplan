@@ -17,13 +17,13 @@ export default function EventForm() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch("http://localhost:3001/events");
+        const response = await fetch("http://localhost:3000/events");
         if (!response.ok) {
           throw new Error("Failed to fetch events");
         }
         const data = await response.json();
         setEvents(data);
-      } catch (error) {
+      } catch (error) { 
         setErrorMessage(error.message);
       }
     };
@@ -48,7 +48,7 @@ export default function EventForm() {
     };
 
     try {
-      const response = await fetch("http://localhost:3001/events", {
+      const response = await fetch("http://localhost:3000/events", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

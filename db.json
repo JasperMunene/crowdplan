@@ -1,7 +1,7 @@
 {
   "events": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Summer Music Festival 2024",
       "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80",
       "time": "10:00 AM",
@@ -10,10 +10,10 @@
       "description": "Join us for three days of incredible live performances, featuring top artists from around the world. Experience music, art, and culture like never before.",
       "category": "Music",
       "host": "LiveNation",
-      "price": 1500.00
+      "price": 1500
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Tech Conference 2024",
       "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80",
       "time": "1:00 PM",
@@ -22,10 +22,10 @@
       "description": "An interactive workshop where attendees can explore various tech stuff.",
       "category": "Technology",
       "host": "Tech hub",
-      "price": 8000.00
+      "price": 8000
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Food & Wine Expo",
       "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80",
       "time": "6:00 PM",
@@ -34,10 +34,10 @@
       "description": "Experience different foods",
       "category": "Food",
       "host": "Food Lovers",
-      "price": 1000.00
+      "price": 1000
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Ye Music Festival 2024",
       "image": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&q=80",
       "time": "4:00 PM",
@@ -46,10 +46,10 @@
       "description": "Join us for a weekend of live music performances from artists across various genres.",
       "category": "Music",
       "host": "LiveNation",
-      "price": 2000.00
+      "price": 2000
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Health and Wellness Fair",
       "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "9:00 AM",
@@ -58,10 +58,10 @@
       "description": "A fair dedicated to promoting health and wellness with workshops, yoga sessions, and guest speakers.",
       "category": "Health",
       "host": "Wellness Community",
-      "price": 50.00
+      "price": 50
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Culinary Arts Expo",
       "image": "https://plus.unsplash.com/premium_photo-1686360865541-ba8740d3c323?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "11:00 AM",
@@ -70,10 +70,10 @@
       "description": "Experience a showcase of culinary skills with top chefs from around the country.",
       "category": "Food",
       "host": "Gourmet Experiences",
-      "price": 120.00
+      "price": 120
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Environmental Sustainability Summit",
       "image": "https://images.unsplash.com/photo-1598335624134-5bceb5de202d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "8:00 AM",
@@ -82,10 +82,10 @@
       "description": "A summit focused on discussing sustainable solutions for environmental challenges.",
       "category": "Environment",
       "host": "Green Earth Organization",
-      "price": 75.00
+      "price": 75
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Fitness Bootcamp",
       "image": "https://images.unsplash.com/photo-1549995546-87cb41aa98a4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "7:00 AM",
@@ -94,10 +94,10 @@
       "description": "A high-intensity fitness bootcamp designed for all levels, led by professional trainers.",
       "category": "Fitness",
       "host": "FitPro Trainers",
-      "price": 60.00
+      "price": 60
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Book Club Meetup",
       "image": "https://plus.unsplash.com/premium_photo-1706061121381-d7a7a5a06998?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "5:00 PM",
@@ -106,10 +106,10 @@
       "description": "Join fellow book lovers to discuss this month's selected book and related themes.",
       "category": "Literature",
       "host": "Readers Society",
-      "price": 15.00
+      "price": 15
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Photography Masterclass",
       "image": "https://images.unsplash.com/photo-1542312940-2b6aaa1b28eb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "2:00 PM",
@@ -118,10 +118,10 @@
       "description": "A hands-on photography masterclass taught by a renowned photographer.",
       "category": "Photography",
       "host": "Visual Arts Collective",
-      "price": 90.00
+      "price": 90
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Charity Marathon",
       "image": "https://plus.unsplash.com/premium_photo-1664304830629-bdac1397d53c?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "6:00 AM",
@@ -130,10 +130,10 @@
       "description": "A marathon event where all proceeds go to local charities. Participate or sponsor!",
       "category": "Charity",
       "host": "Community Supporters",
-      "price": 30.00
+      "price": 30
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Robotics Workshop",
       "image": "https://images.unsplash.com/photo-1581092334247-44dd684e3c82?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "3:00 PM",
@@ -142,10 +142,10 @@
       "description": "Learn the basics of robotics and get hands-on experience building a simple robot.",
       "category": "Technology",
       "host": "Robotics Academy",
-      "price": 100.00
+      "price": 100
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Classical Music Evening",
       "image": "https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "7:30 PM",
@@ -154,10 +154,10 @@
       "description": "An evening dedicated to classical music lovers featuring a live orchestra performance.",
       "category": "Music",
       "host": "City Symphony",
-      "price": 120.00
+      "price": 120
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Winter Wonderland Craft Fair",
       "image": "https://plus.unsplash.com/premium_photo-1679991898461-bd46c8fe00c0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "10:00 AM",
@@ -166,10 +166,10 @@
       "description": "Shop handmade crafts, gifts, and decor at this holiday market.",
       "category": "Arts & Crafts",
       "host": "Handmade Community",
-      "price": 5.00
+      "price": 5
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "Coding Bootcamp for Beginners",
       "image": "https://images.unsplash.com/photo-1607706189992-eae578626c86?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "9:00 AM",
@@ -178,9 +178,8 @@
       "description": "A week-long bootcamp for absolute beginners to learn coding basics.",
       "category": "Education",
       "host": "Learn to Code Academy",
-      "price": 300.00
+      "price": 300
     }
   ],
-
   "users": []
 }
