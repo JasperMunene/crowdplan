@@ -1,72 +1,45 @@
-// pages/events/page.js
-"use client";
+'use client'
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import styles from './Events.module.css';
+import React, { useEffect, useState } from 'react'
+import Navbar from '@/components/Navbar'
+import EventCard from '@/components/EventCard'
 
-const EventsPage = () => {
-  const [events, setEvents] = useState([]);
-  const [filteredEvents, setFilteredEvents] = useState([]);
-  const [search, setSearch] = useState('');
 
+const Events = () => {
+  const [events, setEvents] = useState(null)
+  
   useEffect(() => {
-    fetch('/api/events')
-      .then((res) => res.json())
+    fetch("http://localhost:3000/events")
+      .then((response) => response.json())
       .then((data) => {
-        setEvents(data);
-        setFilteredEvents(data);
-      });
-  }, []);
+        setEvents(data)
+      })
+      .catch((error) => console.error('Error fetching events:', error))
+  }, [])
 
-  const handleFilter = (category) => {
-    setFilteredEvents(
-      events.filter((event) => event.category.toLowerCase() === category.toLowerCase())
-    );
-  };
-
-  const handleSearch = () => {
-    setFilteredEvents(
-      events.filter((event) =>
-        event.title.toLowerCase().includes(search.toLowerCase())
-      )
-    );
-  };
+  if (!events) {
+    return <div>Loading...</div>
+  }
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.header}>Events</h1>
-      <div className={styles.filterControls}>
-        <input
-          type="text"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search events..."
-          className={styles.searchInput}
-        />
-        <button onClick={handleSearch} className={styles.button}>Search</button>
-        <button onClick={() => setFilteredEvents(events)} className={styles.button}>All</button>
-        <button onClick={() => handleFilter('Music')} className={styles.button}>Music</button>
-        <button onClick={() => handleFilter('Workshop')} className={styles.button}>Workshop</button>
-      </div>
-      <ul className={styles.cards}>
-        {filteredEvents.map((event) => (
-          <li key={event.id} className={styles.card}>
-            <Link href={`/events/${event.id}`}>
-              <a>
-                <img src={event.image} alt={event.title} />
-                <h2>{event.title}</h2>
-                <p>{event.date}</p>
-                <p>{event.location}</p>
-                <p>{event.price ? `$${event.price}` : 'Free'}</p>
-              </a>
-            </Link>
-          </li>
+    <div>
+      <Navbar />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+        {events.map((event) => (
+          <EventCard
+            key={event.id}
+            title={event.title}
+            date={event.date}
+            location={event.location}
+            image={event.image}
+            price={event.price}
+            category={event.category}
+            id={event.id}
+          />
         ))}
-      </ul>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default EventsPage;
-
+export default Events

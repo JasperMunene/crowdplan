@@ -7,7 +7,7 @@
       "time": "10:00 AM",
       "date": "December 15-17, 2024",
       "location": "Sarit Expo Center",
-      "description": "Join us for three days of incredible live performances, featuring top artists from around the world. Experience music, art, and culture like never before.",
+      "description": "Join us for an unforgettable three-day celebration of music, art, and culture at the Sarit Expo Center! The Summer Music Festival 2024 brings together top international and local artists across multiple genres, promising thrilling live performances, captivating visual art installations, and an array of food and drinks. This event is the perfect gathering for music enthusiasts, art lovers, and anyone looking to enjoy the vibrant festival atmosphere. Don’t miss out on the chance to experience your favorite artists live on stage and discover new talents!",
       "category": "Music",
       "host": "LiveNation",
       "price": 1500
@@ -19,9 +19,9 @@
       "time": "1:00 PM",
       "date": "Apr 15, 2025",
       "location": "Kigali, RW",
-      "description": "An interactive workshop where attendees can explore various tech stuff.",
+      "description": "Tech Conference 2024 is a must-attend event for innovators, tech enthusiasts, and professionals eager to explore cutting-edge developments in the tech industry. This full-day conference will feature keynote speeches, interactive panel discussions, and hands-on workshops covering topics such as AI, blockchain, IoT, and much more. Network with industry leaders, get insights into the latest technological trends, and engage in discussions that are shaping the future of technology. A fantastic learning opportunity and a chance to connect with like-minded professionals.",
       "category": "Technology",
-      "host": "Tech hub",
+      "host": "Tech Hub",
       "price": 8000
     },
     {
@@ -31,7 +31,7 @@
       "time": "6:00 PM",
       "date": "Jun 10, 2025",
       "location": "Mombasa, KE",
-      "description": "Experience different foods",
+      "description": "Indulge in an evening of culinary delights at the Food & Wine Expo in Mombasa, where food enthusiasts and wine connoisseurs gather to sample a variety of exquisite dishes and wines from top chefs and vintners. This event offers a journey through diverse flavors and cuisines, from classic favorites to innovative culinary creations. The expo will also feature cooking demonstrations, wine-tasting workshops, and the chance to meet and learn from culinary experts.",
       "category": "Food",
       "host": "Food Lovers",
       "price": 1000
@@ -43,7 +43,7 @@
       "time": "4:00 PM",
       "date": "Dec 1, 2024",
       "location": "Nairobi, KE",
-      "description": "Join us for a weekend of live music performances from artists across various genres.",
+      "description": "The Ye Music Festival 2024 is a dynamic event bringing together fans and artists from across various genres for a weekend of spectacular performances. This festival promises an eclectic mix of pop, rock, hip-hop, and more, set against a vibrant festival backdrop in the heart of Nairobi. Enjoy live performances, interactive art installations, and a bustling vendor area with food and merchandise from local artisans.",
       "category": "Music",
       "host": "LiveNation",
       "price": 2000
@@ -55,7 +55,7 @@
       "time": "9:00 AM",
       "date": "2024-06-01",
       "location": "Miami, FL",
-      "description": "A fair dedicated to promoting health and wellness with workshops, yoga sessions, and guest speakers.",
+      "description": "Promoting health, happiness, and personal well-being, the Health and Wellness Fair is a full-day event offering workshops on mindfulness, yoga, meditation, and fitness. With expert speakers and wellness practitioners, attendees can learn about holistic health, nutrition, and lifestyle changes for better health. Don’t miss the chance to try interactive sessions and learn valuable tips to live a balanced and healthy life.",
       "category": "Health",
       "host": "Wellness Community",
       "price": 50
@@ -67,7 +67,7 @@
       "time": "11:00 AM",
       "date": "2024-07-15",
       "location": "Chicago, IL",
-      "description": "Experience a showcase of culinary skills with top chefs from around the country.",
+      "description": "Discover the art of cooking from top chefs at the Culinary Arts Expo in Chicago! This event showcases live cooking demonstrations, workshops, and tastings by culinary professionals who will share their techniques, recipes, and insights. It's a perfect event for aspiring chefs, food lovers, and anyone interested in exploring the culinary arts.",
       "category": "Food",
       "host": "Gourmet Experiences",
       "price": 120
@@ -79,7 +79,7 @@
       "time": "8:00 AM",
       "date": "2024-08-10",
       "location": "Seattle, WA",
-      "description": "A summit focused on discussing sustainable solutions for environmental challenges.",
+      "description": "Join global leaders, environmental experts, and advocates at the Environmental Sustainability Summit in Seattle. This summit is a platform to discuss actionable solutions for pressing environmental issues. Topics include climate change, renewable energy, sustainable agriculture, and waste reduction. Engage in meaningful discussions, attend thought-provoking sessions, and be part of the change towards a greener planet.",
       "category": "Environment",
       "host": "Green Earth Organization",
       "price": 75
@@ -91,7 +91,7 @@
       "time": "7:00 AM",
       "date": "2024-09-05",
       "location": "Denver, CO",
-      "description": "A high-intensity fitness bootcamp designed for all levels, led by professional trainers.",
+      "description": "This high-energy fitness bootcamp offers a full-body workout for all levels! Guided by top trainers, this bootcamp includes cardio, strength training, and flexibility exercises. It’s an excellent opportunity for fitness enthusiasts and beginners alike to challenge themselves, burn calories, and get in shape.",
       "category": "Fitness",
       "host": "FitPro Trainers",
       "price": 60
@@ -103,23 +103,24 @@
       "time": "5:00 PM",
       "date": "2024-10-12",
       "location": "Boston, MA",
-      "description": "Join fellow book lovers to discuss this month's selected book and related themes.",
+      "description": "Book lovers, join us for an engaging evening discussing the month’s selected read and sharing literary insights. This gathering brings together people passionate about reading, creating a space to exchange ideas and perspectives. It’s a welcoming community where members can suggest books, engage in lively discussions, and explore diverse genres and authors.",
       "category": "Literature",
       "host": "Readers Society",
-      "price": 15
+      "price": 10
     },
     {
       "id": "10",
-      "title": "Photography Masterclass",
-      "image": "https://images.unsplash.com/photo-1542312940-2b6aaa1b28eb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Art Exhibition: Colors of Nature",
+      "image": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "time": "2:00 PM",
-      "date": "2024-11-25",
-      "location": "Portland, OR",
-      "description": "A hands-on photography masterclass taught by a renowned photographer.",
-      "category": "Photography",
-      "host": "Visual Arts Collective",
-      "price": 90
+      "date": "2024-11-23",
+      "location": "San Francisco, CA",
+      "description": "The Colors of Nature exhibition showcases works from various artists who have captured the beauty and essence of nature through different mediums. Explore an array of paintings, sculptures, and installations inspired by landscapes, wildlife, and natural elements. It’s a celebration of nature’s vibrant colors and serene landscapes, offering an immersive experience that will leave you inspired.",
+      "category": "Art",
+      "host": "Art & Nature Society",
+      "price": 20
     },
+    
     {
       "id": "11",
       "title": "Charity Marathon",
