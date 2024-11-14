@@ -4,7 +4,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Navbar from '@/components/Navbar';
-import { Calendar, Clock, MapPin, User, Tag, DollarSign, Info } from 'lucide-react';
+import { Calendar, Clock, MapPin, User, DollarSign, } from 'lucide-react';
 import {
   Card,
   CardContent,
@@ -15,6 +15,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { toast } from 'sonner';
 
 
 const EventDetails = () => {
@@ -33,6 +34,12 @@ const EventDetails = () => {
 
   if (!event) {
     return <div>Loading...</div>;
+  }
+
+  function handleClick() {
+    toast("Successfully Registered!", {
+      description: "Check your email for details",
+    });
   }
 
   return (
@@ -102,16 +109,15 @@ const EventDetails = () => {
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <DollarSign className="h-5 w-5 text-gray-500" />
                     <div>
-                      <p className="font-medium">${event.price}</p>
+                      <p className="font-medium">KES {event.price}</p>
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Button className="w-full" size="lg">
+            <Button onClick={handleClick} className="w-full" size="lg">
               Register Now
             </Button>
           </div>

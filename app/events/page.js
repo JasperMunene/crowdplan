@@ -34,6 +34,7 @@ const Events = () => {
             image={event.image}
             price={event.price}
             category={event.category}
+            id={event.id}
           />
         ))}
       </div>
