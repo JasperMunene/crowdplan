@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 
 export default function FeaturedEvent() {
@@ -66,7 +67,7 @@ export default function FeaturedEvent() {
               <span className="text-gray-500 ml-2">Early Bird</span>
             </div>
             <Button size="lg" className="bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors duration-200">
-              Get Tickets
+              <Link href={`/events/${featuredEvent.id}`}>View</Link>
             </Button>
           </CardFooter>
         </div>

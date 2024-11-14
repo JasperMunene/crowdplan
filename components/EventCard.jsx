@@ -10,6 +10,7 @@ import {
     CardFooter,
     CardHeader,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 
 
@@ -20,6 +21,7 @@ export default function EventCard({
     image,
     price,
     category,
+    id,
 }) {
     return (
         <Card className="overflow-hidden hover:shadow-lg transition-shadow">
@@ -50,7 +52,7 @@ export default function EventCard({
             </CardContent>
             <CardFooter className="flex justify-between items-center">
                 <span className="text-lg font-semibold">KES {price}</span>
-                <Button>Get Tickets</Button>
+                <Button><Link href={`/events/${id}`}>View</Link></Button>
             </CardFooter>
         </Card>
     );
