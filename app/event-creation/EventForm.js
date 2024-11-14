@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import styles from "./EventForm.module.css";
+import EventCard from "@/components/EventCard";
 
 export default function EventForm() {
   const [title, setTitle] = useState("");
@@ -155,26 +156,19 @@ export default function EventForm() {
       <div className={styles.eventList}>
         <h2 className={styles.listTitle}>Existing Events</h2>
         {events.length > 0 ? (
-          <ul>
+          <div className="flex flex-col gap-5">
             {events.map((event) => (
-              <li key={event.id} className={styles.eventItem}>
-                <h3>{event.title}</h3>
-
-                {/* Use img tag to display event image from an external URL */}
-                <img
-                  src={event.image}  // External URL for the image
-                  alt={event.title}  // Use event title for alt text
-                  className={styles.eventImage}  // Your custom styling class
-                />
-
-                <p>Category: {event.category}</p>
-                <p>Date: {event.date}</p>
-                <p>Time: {event.time}</p>
-                <p>Location: {event.location}</p>
-                <p>Description: {event.description}</p>
-              </li>
+              <EventCard
+              key={event.id}
+              title={event.title}
+              date={event.date}
+              location={event.location}
+              image={event.image}
+              price={event.price}
+              category={event.category}
+            />
             ))}
-          </ul>
+          </div>
         ) : (
           <p>No events available.</p>
         )}
