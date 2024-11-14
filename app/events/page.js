@@ -4,7 +4,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Events.module.css';
-import Navbar from
+import Navbar from 
 
 const EventsPage = () => {
   const [events, setEvents] = useState([]);
