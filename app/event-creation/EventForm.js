@@ -168,7 +168,7 @@ export default function EventForm() {
       </form>
 
       <div className={styles.eventList}>
-        <h2 className={styles.listTitle}>Past Events</h2>
+        <h2 className={styles.listTitle}>Other Events</h2>
         {events.length > 0 ? (
           <div className="flex flex-col gap-5">
             {events.map((event) => (
