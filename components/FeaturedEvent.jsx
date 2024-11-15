@@ -13,7 +13,7 @@ export default function FeaturedEvent() {
   const [featuredEvent, setFeaturedEvent] = useState(null);
 
   useEffect(() => {
-    fetch("https://event-api-9ll8.onrender.com/events")
+    fetch("http://localhost:3000/events")
       .then((response) => response.json())
       .then((data) => {
         setFeaturedEvent(data[0]);
