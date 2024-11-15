@@ -13,6 +13,8 @@ export default function EventForm() {
   const [successMessage, setSuccessMessage] = useState("");
   const [events, setEvents] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
+  const [price, setPrice] = useState("");
+
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -46,6 +48,7 @@ export default function EventForm() {
       location,
       description,
       image: imageUrl,
+      price,
     };
 
     try {
@@ -159,6 +162,18 @@ export default function EventForm() {
             className={styles.input}
           />
         </div>
+
+        <div className={styles.label}>
+          Price
+          <input
+            type="number"
+            value={price}
+            onChange={(e) => setPrice(e.target.value)}
+            placeholder="Enter event price"
+            className={styles.input}
+          />
+        </div>
+
 
         <button type="submit" className={styles.button}>
           Create Event
