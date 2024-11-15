@@ -65,7 +65,7 @@ Crowd Plan is a simple and efficient platform designed to streamline event creat
    ```bash
    npm run dev
    ```
-   Access the app at `http://localhost:3000`.
+   Access the app at `http://localhost:3001`.
 
 ---
 
