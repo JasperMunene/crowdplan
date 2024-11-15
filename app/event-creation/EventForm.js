@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import styles from "./EventForm.module.css";
 import { useUser } from '@clerk/nextjs';
+import EventCard from "@/components/EventCard";
 
 export default function EventForm() {
   const { user } = useUser();
@@ -171,26 +172,20 @@ export default function EventForm() {
       <div className={styles.eventList}>
         <h2 className={styles.listTitle}>Existing Events</h2>
         {events.length > 0 ? (
-          <ul>
+          <div className="flex flex-col gap-5">
             {events.map((event) => (
-              <li key={event.id} className={styles.eventItem}>
-                <h3>{event.title}</h3>
-                {event.image && (
-                  <img
-                    src={event.image}
-                    alt={event.title}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className={styles.eventImage}
-                  />
-                )}
-                <p>Category: {event.category}</p>
-                <p>Date: {event.date}</p>
-                <p>Time: {event.time}</p>
-                <p>Location: {event.location}</p>
-                <p>Description: {event.description}</p>
-              </li>
+              <EventCard
+              key={event.id}
+              title={event.title}
+              date={event.date}
+              location={event.location}
+              image={event.image}
+              price={event.price}
+              category={event.category}
+              id={event.id}
+            />
             ))}
-          </ul>
+          </div>
         ) : (
           <p>No events available.</p>
         )}
