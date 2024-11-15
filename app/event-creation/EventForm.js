@@ -74,6 +74,7 @@ export default function EventForm() {
       setLocation("");
       setDescription("");
       setImageUrl("");
+      setPrice("")
     } catch (error) {
       setErrorMessage(error.message);
     }
