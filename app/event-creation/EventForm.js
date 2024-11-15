@@ -1,8 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import styles from "./EventForm.module.css";
+import { useUser } from '@clerk/nextjs';
 
 export default function EventForm() {
+  const { user } = useUser();
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
   const [date, setDate] = useState("");
@@ -46,6 +48,7 @@ export default function EventForm() {
       location,
       description,
       image: imageUrl,
+      userId: user.id,
     };
 
     try {
