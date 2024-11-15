@@ -11,7 +11,7 @@ export default function EventListing() {
   const [events, setEvents] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/events")
+    fetch("https://event-api-9ll8.onrender.com/events")
       .then((response) => response.json())
       .then((data) => {
         setEvents(data);
