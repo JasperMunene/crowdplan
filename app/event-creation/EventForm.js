@@ -13,8 +13,7 @@ export default function EventForm() {
   const [successMessage, setSuccessMessage] = useState("");
   const [events, setEvents] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
-  const [price, setPrice] = useState("");
-
+  const [price, setPrice] = useState(""); // New state for price
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -173,7 +172,6 @@ export default function EventForm() {
             className={styles.input}
           />
         </div>
-
 
         <button type="submit" className={styles.button}>
           Create Event

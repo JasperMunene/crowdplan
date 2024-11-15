@@ -1,6 +1,6 @@
-// import { ClerkProvider } from '@clerk/nextjs'
+import { ClerkProvider } from '@clerk/nextjs'
 import { Afacad } from 'next/font/google'
-// import { neobrutalism } from '@clerk/themes'
+import { neobrutalism } from '@clerk/themes'
 import { Toaster } from "@/components/ui/sonner"
 import "./globals.css";
 
@@ -17,19 +17,19 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    // <ClerkProvider
-    //   appearance={{
-    //     baseTheme: neobrutalism
-    //   }}
-    // >
-    <html lang="en">
-      <body
-        className={`${afacad.className} antialiased`}
-      >
-        <main>{children}</main>
-        <Toaster />
-      </body>
-    </html>
-    // </ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        baseTheme: neobrutalism
+      }}
+    >
+      <html lang="en">
+        <body
+          className={`${afacad.className} antialiased`}
+        >
+          <main>{children}</main>
+          <Toaster />
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
