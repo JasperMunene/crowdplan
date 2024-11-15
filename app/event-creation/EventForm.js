@@ -1,10 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import styles from "./EventForm.module.css";
-import { useUser } from '@clerk/nextjs';
 
 export default function EventForm() {
-  const { user } = useUser();
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
   const [date, setDate] = useState("");
@@ -15,6 +13,7 @@ export default function EventForm() {
   const [successMessage, setSuccessMessage] = useState("");
   const [events, setEvents] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
+  const [price, setPrice] = useState(""); // New state for price
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -48,7 +47,7 @@ export default function EventForm() {
       location,
       description,
       image: imageUrl,
-      userId: user.id,
+      price,
     };
 
     try {
@@ -159,6 +158,17 @@ export default function EventForm() {
             value={imageUrl}
             onChange={(e) => setImageUrl(e.target.value)}
             placeholder="Enter an image URL for the event"
+            className={styles.input}
+          />
+        </div>
+
+        <div className={styles.label}>
+          Price
+          <input
+            type="number"
+            value={price}
+            onChange={(e) => setPrice(e.target.value)}
+            placeholder="Enter event price"
             className={styles.input}
           />
         </div>
