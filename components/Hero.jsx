@@ -46,7 +46,7 @@ export default function Hero() {
           </h1>
           <p className="text-lg text-gray-600 mb-10">
             Find and join the most exciting events in your area. From conferences to concerts, 
-            we've got everything you're looking for.
+            we have got everything you are looking for.
           </p>
           <div className="flex justify-center gap-4 max-w-xl mx-auto">
             <div className="flex-1">

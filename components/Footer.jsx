@@ -10,7 +10,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4 text-gray-800">About Us</h3>
           <p className="text-muted-foreground">
-            We're dedicated to connecting people with incredible events and creating unforgettable experiences.
+            We are dedicated to connecting people with incredible events and creating unforgettable experiences.
           </p>
         </div>
         <div>
