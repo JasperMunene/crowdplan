@@ -17,7 +17,7 @@ export default function Hero() {
 
   const handleSearch = async () => {
     try {
-      const response = await fetch('http://localhost:3000/events');
+      const response = await fetch('https://event-api-9ll8.onrender.com/events');
       if (!response.ok) throw new Error('Failed to fetch events');
       
       const data = await response.json();
